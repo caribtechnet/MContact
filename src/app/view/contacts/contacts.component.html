@@ -1,8 +1,9 @@
 <div>
-
   <ul *ngIf="!showAsList">
     <li *ngFor="let item of _contacts">
-      <app-contact [FirstName]="item.FirstName"
+      <app-contact
+                   [Id]="item.id"
+                   [FirstName]="item.FirstName"
                    [LastName]="item.LastName"
                    [DepartmentId]="item.DepartmentId"
                    [Email]="item.Email"
