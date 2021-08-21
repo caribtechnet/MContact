@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core'
+import { ActivatedRoute, Router } from '@angular/router';
 import { Common } from '../environments/common';
 import { environment } from '../environments/environment';
 import { MessagingServiceService } from './services/messaging-service.service';
@@ -10,6 +11,8 @@ import { MessagingServiceService } from './services/messaging-service.service';
 })
 export class AppComponent {
   title = 'Contact';
+
+  public Home = () => this.router.navigate(['/']);
 
   private _keepTheToolBarVisible: boolean = false;
   public get keepTheToolBarVisible(): boolean {
@@ -53,7 +56,7 @@ export class AppComponent {
    * 
    * @param _messagingService
    */
-  constructor(private _messagingService: MessagingServiceService) {
+  constructor(private router: Router, private _messagingService: MessagingServiceService) {
 
     this.LoadSavedSettings();
   }

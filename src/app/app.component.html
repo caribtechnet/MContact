@@ -17,8 +17,10 @@
         <mat-icon title="Refresh" (click)="reloadContacts()">refresh</mat-icon>
       </button> <span class="toolbar-spacer"></span>
       <mat-icon id="showContactsInaGrid" (click)="SwitchTheContactView()">grid_on</mat-icon>
-      My Account
+      <a id="Home" (click)="Home()">
+        My Account
+      </a>
     </mat-toolbar>
-      <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
