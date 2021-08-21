@@ -1,0 +1,25 @@
+
+mat-card {
+  max-height: 1024px;
+  max-width: 264px;
+  margin: 0 0 6px 5px;
+}
+
+mat-card-header {
+}
+
+mat-card-title {
+}
+
+img.mat-card-image {  
+  width: calc(100%+5px);
+}
+
+mat-card-content * {
+}
+mat-card-header * {
+}
+
+mat-card-actions *:hover {
+    cursor:pointer;
+}

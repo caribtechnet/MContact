@@ -1,0 +1,43 @@
+<div class="mat-elevation-z8">
+  <table mat-table
+         [dataSource]="dataSource">
+
+    <!--<ng-container matColumnDef="FirstName">
+      <th mat-header-cell *matHeaderCellDef> ID </th>
+      <td mat-cell *matCellDef="let element"> {{element.Id}} </td>
+    </ng-container>-->
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="FirstName">
+      <th mat-header-cell *matHeaderCellDef> First Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.FirstName}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="LastName">
+      <th mat-header-cell *matHeaderCellDef> Last Name </th>
+      <td mat-cell *matCellDef="let element"> {{element.LastName}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="DepartmentId">
+      <th mat-header-cell *matHeaderCellDef> Department Id </th>
+      <td mat-cell *matCellDef="let element"> {{element.DepartmentId}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="Email">
+      <th mat-header-cell *matHeaderCellDef> Email </th>
+      <td mat-cell *matCellDef="let element"> {{element.Email}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+  </table>
+
+  <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                 showFirstLastButtons
+                 aria-label="page of Contacts">
+  </mat-paginator>
+</div>

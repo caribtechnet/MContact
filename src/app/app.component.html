@@ -1,0 +1,24 @@
+
+<mat-sidenav-container fullscreen>
+  <mat-sidenav mode="side" #sidenav
+               [(opened)]="keepTheToolBarVisible"
+               position="start">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/contact" routerLinkActive="active">Contact</a>
+      <a mat-list-item routerLink="/department" routerLinkActive="active">Department</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <button mat-icon-button style="margin-left:15px;">
+        <mat-icon title="Refresh" (click)="reloadContacts()">refresh</mat-icon>
+      </button> <span class="toolbar-spacer"></span>
+      <mat-icon id="showContactsInaGrid" (click)="SwitchTheContactView()">grid_on</mat-icon>
+      My Account
+    </mat-toolbar>
+      <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

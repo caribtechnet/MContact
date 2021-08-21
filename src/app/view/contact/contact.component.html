@@ -1,0 +1,15 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>{{FirstName}} {{LastName}}</mat-card-title>
+    <mat-card-subtitle>Department: {{DepartmentId}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src={{Photo}} alt="{{FirstName}} {{LastName}}">
+  <mat-card-content>
+    <p>Created : {{Started}}</p>
+    <!--<p>Joined in 2020</p>-->
+  </mat-card-content>
+  <mat-card-actions>
+    <div (click)="EmailDialog()">Email {{Email}}</div>
+    <div (click)="CallDialog()">Call {{FirstName}} {{LastName}}</div>
+  </mat-card-actions>
+</mat-card>
