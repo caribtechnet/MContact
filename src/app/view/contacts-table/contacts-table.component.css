@@ -1,10 +1,21 @@
 table {
   width: 100%;
+ //background-color:#ffffff;
+  color:#000000;
 }
 
-/*.mat-header-cell {
-  background: red;
-}*/
+.mat-header-cell{
+font-size:large;
+/*font-family:'Californian FB';*/
+/*font-style:oblique;*/
+}
+
+.mat-row .mat-cell {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  cursor: pointer;
+}
+
 
 
 .mat-column-FirstName {
@@ -29,3 +40,4 @@ table {
   text-align: center;
   font-weight: bold;
 }
+

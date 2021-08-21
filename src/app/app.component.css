@@ -25,8 +25,9 @@ mat-sidenav {
   color: #fff !important;
 }
 
-#showContactsInaGrid{
-    margin-right:5px;
+#showContactsInaGrid {
+  margin-right: 5px;
+  cursor: pointer;
 }
 
 mat-sidenav-content{
