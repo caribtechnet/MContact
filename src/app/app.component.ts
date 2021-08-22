@@ -12,7 +12,8 @@ import { MessagingServiceService } from './services/messaging-service.service';
 export class AppComponent {
   title = 'Contact';
 
-  public Home = () => this.router.navigate(['/']);
+  /**Navigate to Home */
+  public Home = () => this.router.navigate(['/home']);
 
   private _keepTheToolBarVisible: boolean = false;
   public get keepTheToolBarVisible(): boolean {

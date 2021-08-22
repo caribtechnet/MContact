@@ -6,10 +6,13 @@ import { ContactComponent } from './view/contact/contact.component'
 import { DepartmentComponent } from './view/department/department.component'
 import { ContactsComponent } from './view/contacts/contacts.component'
 import { DepartmentsComponent } from './view/departments/departments.component'
+import { HomeComponent } from './view/home/home.component'
 
 const appRoutes: Routes = [
+  { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactsComponent },
-  { path: 'department', component: DepartmentsComponent }
+  { path: 'department', component: DepartmentsComponent },
+  { path: '', redirectTo: "/home", pathMatch: 'full'}
 ]
 
 
