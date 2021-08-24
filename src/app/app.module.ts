@@ -19,7 +19,7 @@ import { MatCardModule } from '@angular/material/card'
 import { CallDialogComponent } from './view/call-dialog/call-dialog.component'
 import { EmaillDialogComponent } from './view/emaill-dialog/emaill-dialog.component'
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http'
-import { FormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { ContactService } from './services/contacts.service'
 import { DepartmentsService } from './services/departments.service'
 import { MessagingServiceService } from './services/messaging-service.service';
@@ -30,6 +30,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { HomeComponent } from './view/home/home.component';
+import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 @NgModule({
   declarations: [
@@ -61,6 +62,8 @@ import { HomeComponent } from './view/home/home.component';
     MatPaginatorModule
     , MatFormFieldModule
     , MatSelectModule
+    , MatAutocompleteModule
+    , ReactiveFormsModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: SecurityServiceService, multi: true },
