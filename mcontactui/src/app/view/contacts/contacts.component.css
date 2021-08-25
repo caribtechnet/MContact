@@ -1,0 +1,23 @@
+ul li {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  width: 100%;
+}
+
+.mcontainer ul {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-margin-top: 75px;
+  scroll-behavior: smooth;
+}
+
+.mcontainer {
+  margin-bottom: 1em;
+  width:calc(100%);
+}
+

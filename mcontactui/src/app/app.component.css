@@ -1,0 +1,48 @@
+
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+
+
+mat-sidenav {
+  width: 180px;
+  padding: 15px;
+}
+
+.mat-drawer {
+  background-color: #023075;
+  color: #fff
+}
+
+.main-content {
+  padding: 0 0 0;
+}
+
+.toolbar-spacer {
+  flex: 1 1 auto;
+}
+
+/****/
+.mat-nav-list a {
+  color: #fff !important;
+}
+
+#showContactsInaGrid {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+mat-sidenav-content{
+    padding-left:0;
+}
+
+mat-toolbar{
+    position:sticky;
+    top:0;
+    z-index:1;
+    width:calc(100%)
+}
+
+a#Home {
+  cursor: pointer;
+}
